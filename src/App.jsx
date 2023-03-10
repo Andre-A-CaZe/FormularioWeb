@@ -6,8 +6,11 @@ import Header from './components/Header'
 import Listado from './components/Listado'
 
 function App() {
-
+  //Captura de Estudiantes
   const [estudiantes, setEstudiantes] = useState([]);
+
+  //Para editar
+  const [estudiante, setEstudiante] = useState({});
 
   
   return (
@@ -18,14 +21,17 @@ function App() {
         <Formulario
         estudiantes={estudiantes}
         setEstudiantes = {setEstudiantes}
+        estudiante={estudiante}
+        setEstudiante={setEstudiante}
         />
-        <Listado/>
+        <Listado
+        estudiantes={estudiantes}
+        setEstudiante={setEstudiante}
+        />
       </div>
     </div>
   )
 }
-
-
 
 
 export default App
