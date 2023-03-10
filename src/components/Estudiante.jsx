@@ -1,8 +1,9 @@
 import React from 'react'
 
-const Estudiante = ({estudiante, setEstudiante}) => {
+const Estudiante = ({estudiante, setEstudiante, eliminarEstudiante}) => {
 
   const {nombre, carrera, semestre, promedio} = estudiante;
+
 
   return (
     <div className='px-4 mt-5 py-4 rounded-md shadow-lg'>
@@ -20,7 +21,7 @@ const Estudiante = ({estudiante, setEstudiante}) => {
     </p>
     <div>
       <button type='button'
-      className='py-3 px-9 mx-2 text-white bg-red-600 hover:bg-rose-400 rounded-md' onClick={()=>{}} >Eliminar</button>
+      className='py-3 px-9 mx-2 text-white bg-red-600 hover:bg-rose-400 rounded-md' onClick={()=>eliminarEstudiante(estudiante.id)} >Eliminar</button>
       <button type='button'
       className='py-3 px-9 mx-2 text-white bg-green-600 hover:bg-blue-400 rounded-md' onClick={()=>setEstudiante(estudiante)}>Modificar</button>
     </div>

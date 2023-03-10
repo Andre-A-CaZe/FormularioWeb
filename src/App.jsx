@@ -12,6 +12,10 @@ function App() {
   //Para editar
   const [estudiante, setEstudiante] = useState({});
 
+  const eliminarEstudiante = (id) => {
+    const estudiantesActualizados=estudiantes.filter(estudiante => estudiante.id != id);
+    setEstudiantes(estudiantesActualizados);
+  }
   
   return (
     <div className='container mx-auto'>
@@ -27,6 +31,7 @@ function App() {
         <Listado
         estudiantes={estudiantes}
         setEstudiante={setEstudiante}
+        eliminarEstudiante={eliminarEstudiante}
         />
       </div>
     </div>
