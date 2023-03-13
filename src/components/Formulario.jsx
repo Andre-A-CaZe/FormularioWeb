@@ -70,7 +70,7 @@ const Formulario = ({estudiantes, setEstudiantes, estudiante, setEstudiante}) =>
 
 
   return (
-    <div className='m-[15px] p-[20px] md:w-1/2 lg:w-2/5 bg-[#e5989b] rounded-md text-black'>
+    <div className='m-[15px] p-[20px] md:w-1/2 lg:w-2/5 bg-[#dee2e6] rounded-md text-black'>
       <h1 className='font-bold text-center text-xl'>Registrar Estudiantes</h1>
       <h2 className='font-bold text-center'>Agregar y Administrar</h2>
         <form 

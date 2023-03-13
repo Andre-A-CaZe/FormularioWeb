@@ -6,7 +6,7 @@ const Estudiante = ({estudiante, setEstudiante, eliminarEstudiante}) => {
 
 
   return (
-    <div className='px-4 mt-5 py-4 rounded-md shadow-lg'>
+    <div className='px-4 mt-5 py-4 rounded-md shadow-lg bg-[#6c757d]'>
     <p className='font-bold mb-2 uppercase'>
         Nombre: <span className='font-normal ml-3 normal-case'>{nombre}</span>
         </p>
